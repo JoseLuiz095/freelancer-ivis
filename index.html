@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Carrinho de Produtos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../brand/logo-image-x-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cabecalho">
+    <img src="" class=" mb-0">
+  </div>
+  <div class="container">
+    <hr>
+    <div id="app" class="row">
+      <div class="col-sm-8">
+        <div class="barradepesquisa">
+          <nav class="navbar bg-body-tertiary ">
+            <div class="container-fluid">
+              <form class="d-flex " role="search">
+                <input id="campo-pesquisa" class="form-control me-2 barra " type="search" placeholder="Pesquisar Produto"
+                  aria-label="Pesquisar">
+                <button class="btn btn-outline-success ml-2" type="button">Buscar</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <div class="nadaencontrado none">
+          <h2>Nada Encontrado.</h2>
+        </div>
+        <div class="row loja">
+          <!-- <div class="col-sm-4 mb-3">
+            <div class="card">
+              <div class="card loja__item">
+                <img class="card-img-top" src="https://lorempixel.com/500/300" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">JSRaiz para FW</h5>
+                  <small>R$300,00</small>
+                  <p class="card-text">O melhor curso do mundo</p>
+                  <button data-value="300" class="btn btn-primary">Adicionar</button>
+                </div>
+              </div>
+            </div>
+          </div>col-sm-4 -->
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="carrinho">
+          <div class="carrinho__itens">
+            <!-- <div class="card carrinho__item">
+              <div class="card-body">
+                <h5 class="card-title">JSRaiz para FW</h5>
+                <p class="card-text">Preço unidade: R$300,00 | Quantidade: 2</p>
+                <p class="card-text">Valor: R$600</p>
+                <button class="btn btn-danger btn-sm">Remover</button>
+              </div>
+            </div> -->
+          </div>
+          <div class="carrinho__total mt-2 p-3">
+            <!-- <h6>Total: <strong>R$600,00</strong></h6> -->
+          </div>
+          <div class="selecao-cliente mt-2">
+            <label for="clientes">Cliente:</label>
+            <select id="clientes" class="form-control">
+              <!-- Opções de cliente serão inseridas dinamicamente -->
+            </select>
+          </div>
+          <div class="gerar-planilha mt-2">
+            <button id="gerarPlanilha" class="btn btn-primary btn-block">Gerar Planilha PDF</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p> &copy; Copyright 2024 - Casa do Serralheiro - Todos os direitos reservados - Feito por <a
+        href="https://portifolio-jl095.netlify.app">DevJL095</a></p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
